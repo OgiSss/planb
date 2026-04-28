@@ -110,9 +110,9 @@ export default function Home() {
           </Link>
 
           <nav className="absolute left-1/2 hidden -translate-x-1/2 gap-9 text-[13px] font-semibold text-slate-600 lg:flex">
-            <a href="#misja" className="transition hover:text-[#0057FF]">Misja</a>
-            <a href="#jak" className="transition hover:text-[#0057FF]">Jak działamy</a>
-            <a href="#efekt" className="transition hover:text-[#0057FF]">Fundamenty</a>
+            <a href="#idea" className="transition hover:text-[#0057FF]">Idea</a>
+            <a href="#produkty" className="transition hover:text-[#0057FF]">Produkty</a>
+            <a href="#partner" className="transition hover:text-[#0057FF]">Partner</a>
             <a href="#faq" className="transition hover:text-[#0057FF]">FAQ</a>
             <a href="#kontakt" className="transition hover:text-[#0057FF]">Kontakt</a>
           </nav>
@@ -124,9 +124,9 @@ export default function Home() {
               </summary>
               <div className="absolute right-0 top-[calc(100%+10px)] z-50 flex w-60 flex-col gap-1.5 rounded-3xl border border-slate-100 bg-white p-3 shadow-2xl">
                 {[
-                  ["#misja", "Misja"],
-                  ["#jak", "Jak działamy"],
-                  ["#efekt", "Fundamenty"],
+                  ["#idea", "Idea"],
+                  ["#produkty", "Produkty"],
+                  ["#partner", "Partner"],
                   ["#faq", "FAQ"],
                   ["#kontakt", "Kontakt"],
                 ].map(([href, label]) => (
@@ -163,34 +163,36 @@ export default function Home() {
               <Reveal as="div" className="lg:col-span-7" y={20}>
                 <div className="flex flex-wrap gap-2">
                   <Pill>● Plan A + Plan B</Pill>
-                  <Pill>Profilaktyka 2026</Pill>
-                  <Pill>Dialog z medycyną</Pill>
+                  <Pill>Ubezpieczenia z głową</Pill>
+                  <Pill>Partner: Unilink</Pill>
                 </div>
 
                 <h1 className="mt-7 text-[clamp(2.4rem,_6.4vw,_4.6rem)] font-extrabold leading-[1.02] tracking-[-0.02em] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,.35)]">
-                  Profilaktyka, która{" "}
+                  Życie zaskakuje.{" "}
                   <span className="relative inline-block">
                     <span className="bg-gradient-to-r from-[#ffd1a4] via-[#ff9aa9] to-[#ff3399] bg-clip-text text-transparent">
-                      naprawdę chroni
+                      Miej Plan B
                     </span>
                     <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" preserveAspectRatio="none">
                       <path d="M2 8 Q80 2 150 6 T298 5" stroke="#ff3399" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.85" />
                     </svg>
                   </span>{" "}
-                  Ciebie i Twoich bliskich.
+                  na to, czego nie da się przewidzieć.
                 </h1>
 
                 <p className="mt-7 max-w-xl text-[17px] leading-relaxed text-white/90 md:text-[19px]">
-                  Plan B to program Fundacji „Zacznij od Siebie” — dla każdego, kto chce świadomie zadbać o swoje zdrowie i bezpieczeństwo finansowe rodziny.
-                  Edukacja ubezpieczeniowa, profilaktyka i konkretne wskazówki. Bez nachalnej sprzedaży, bez sloganów dla pokazu.
+                  Nie na wszystko mamy wpływ. Choroba, wypadek, nagła operacja — czasem Plan A nie wystarcza.
+                  Z dobrze dobranym ubezpieczeniem masz Plan B: szybki dostęp do leczenia i finansowy bufor,
+                  gdy najbardziej tego potrzebujesz. Pokażemy gotowe rozwiązania, a profesjonalni doradcy
+                  zrobią z Tobą indywidualną analizę.
                 </p>
 
                 <div className="mt-9 flex flex-wrap items-center gap-3">
                   <a
-                    href="#kontakt"
+                    href="#produkty"
                     className="group inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-[14px] font-extrabold text-[#0046CC] shadow-[0_18px_40px_-12px_rgba(255,255,255,0.5)] transition hover:scale-[1.02]"
                   >
-                    Umów bezpłatną konsultację
+                    Zobacz gotowe produkty
                     <span className="grid h-6 w-6 place-items-center rounded-full bg-[#0057FF] text-white transition group-hover:translate-x-0.5">
                       <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 5l7 7-7 7" />
@@ -198,10 +200,10 @@ export default function Home() {
                     </span>
                   </a>
                   <a
-                    href="#jak"
+                    href="#kontakt"
                     className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-white/5 px-7 py-4 text-[14px] font-semibold text-white backdrop-blur-sm transition hover:bg-white/15"
                   >
-                    Zobacz, jak działamy
+                    Umów analizę z doradcą
                   </a>
                 </div>
 
@@ -288,91 +290,156 @@ export default function Home() {
           </Stagger>
         </section>
 
-        {/* ——— BENTO / MISJA ——— */}
-        <section id="misja" className="px-3 pb-12 pt-16 md:px-8 md:pb-24 md:pt-24">
+        {/* ——— IDEA — Plan A / Plan B ——— */}
+        <section id="idea" className="px-3 pb-12 pt-16 md:px-8 md:pb-24 md:pt-24">
           <Reveal className="mx-auto mb-14 max-w-[1320px] text-center md:mb-20">
-            <Pill tone="solid">Fundamenty efektu</Pill>
+            <Pill tone="solid">Idea</Pill>
             <h2 className="mx-auto mt-5 max-w-3xl text-[clamp(1.875rem,_4vw,_2.875rem)] font-extrabold leading-[1.08] tracking-[-0.01em] text-slate-900">
-              Trzy fundamenty, jeden rytm
+              Na wszystko nie mamy wpływu — ale Plan B możemy mieć
             </h2>
-            <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-slate-600">
-              Profilaktyka, edukacja i dialog — tak Plan B układa codzienną pracę z firmą.
+            <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-slate-600">
+              Życie potrafi zaskoczyć: choroba, wypadek, niespodziewana operacja, długie kolejki w publicznej ochronie zdrowia.
+              Plan A — czyli to, co masz dziś — nie zawsze wystarcza. Dobrze dobrane ubezpieczenie to Plan B,
+              który włącza się dokładnie wtedy, kiedy go potrzebujesz.
             </p>
           </Reveal>
 
           <div className="mx-auto grid max-w-[1320px] grid-cols-1 gap-4 md:grid-cols-12 md:gap-5">
-            {/* DUŻA OKŁADKA — col-span-7 */}
-            <Reveal className="relative min-h-[420px] overflow-hidden rounded-[2rem] bg-slate-900 md:col-span-7 md:min-h-[460px]">
-              <Image src={img.bentoA} alt="" fill className="object-cover opacity-85" sizes="(max-width:768px) 100vw, 56vw" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-black/85 via-black/35 to-transparent" />
-              <div className="absolute inset-0 bg-grain opacity-15 mix-blend-overlay" />
-              <div className="relative flex h-full flex-col justify-between p-7 md:p-10">
-                <Pill>Misja bez sprzedaży</Pill>
-                <div>
-                  <p className="max-w-xl text-[1.45rem] font-extrabold leading-[1.15] tracking-[-0.01em] text-white md:text-[1.85rem]">
-                    Ubezpieczenia jako szacunek dla życia człowieka — nie polisa doklejana pod presją sprzedaży.
-                  </p>
-                  <p className="mt-5 max-w-md text-[14px] leading-relaxed text-white/80">
-                    Dialog o zdrowiu i bezpieczeństwie potrzebuje czasu. Plan B dobiera narzędzia rozsądnie, z myślą o pracowniku i jego rodzinie.
-                  </p>
-                </div>
-              </div>
+            {/* PLAN A */}
+            <Reveal className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-black/[0.04] md:col-span-6 md:p-10">
+              <Pill tone="solid">Plan A</Pill>
+              <h3 className="mt-6 text-[1.5rem] font-extrabold leading-tight tracking-tight text-slate-900 md:text-[1.85rem]">
+                To, co masz dziś
+              </h3>
+              <p className="mt-4 text-[15px] leading-relaxed text-slate-600">
+                Praca, oszczędności, NFZ, opieka rodziny. Działa — dopóki działa. Problem zaczyna się tam,
+                gdzie kończy się przewidywalność: kolejka do specjalisty, koszt prywatnej operacji,
+                nieobecność w pracy z powodu choroby.
+              </p>
+              <ul className="mt-6 space-y-2.5">
+                {["Publiczna ochrona zdrowia z kolejkami", "Domowy budżet i oszczędności", "Wsparcie rodziny i pracodawcy"].map((b) => (
+                  <li key={b} className="flex items-start gap-2.5 text-[14px] text-slate-700">
+                    <span className="mt-[7px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
             </Reveal>
 
-            {/* PULL-QUOTE — col-span-5 */}
-            <Reveal className="relative overflow-hidden rounded-[2rem] bg-[#0057FF] text-white md:col-span-5" delay={0.08}>
+            {/* PLAN B */}
+            <Reveal className="relative overflow-hidden rounded-[2rem] bg-[#0057FF] p-8 text-white md:col-span-6 md:p-10" delay={0.08}>
               <div className="absolute -right-[30%] -top-[30%] h-[180%] w-[140%] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.22)_0%,transparent_72%)]" />
               <div className="absolute inset-0 bg-grain opacity-20 mix-blend-overlay" />
-              <div className="relative flex h-full min-h-[420px] flex-col justify-between p-7 md:min-h-[460px] md:p-10">
-                <Pill>Hasło fundamentu</Pill>
-                <div>
-                  <p className="text-[1.65rem] font-extrabold leading-[1.1] tracking-[-0.01em] md:text-[2.15rem]">
-                    Nie reklamy —<br />
-                    kultura świadomego życia.
-                  </p>
-                  <div className="mt-7 flex items-center gap-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-white/80">
-                    <span className="grid h-9 w-9 place-items-center rounded-full bg-white/15 text-base font-black text-white">B</span>
-                    Fundacja „Zacznij od Siebie”
-                  </div>
-                </div>
+              <div className="relative">
+                <Pill>Plan B</Pill>
+                <h3 className="mt-6 text-[1.5rem] font-extrabold leading-tight tracking-tight md:text-[1.85rem]">
+                  Ubezpieczenie, które włącza się, gdy Plan A nie wystarcza
+                </h3>
+                <p className="mt-4 text-[15px] leading-relaxed text-white/90">
+                  Szybki dostęp do prywatnej diagnostyki i leczenia, finansowy bufor na czas choroby,
+                  wsparcie dla rodziny. Dobrane do Twojej sytuacji — nie z półki „dla wszystkich”.
+                </p>
+                <ul className="mt-6 space-y-2.5">
+                  {["Szybki dostęp do specjalistów i operacji", "Pieniądze na leczenie i codzienne życie", "Spokój głowy dla Ciebie i bliskich"].map((b) => (
+                    <li key={b} className="flex items-start gap-2.5 text-[14px] text-white/95">
+                      <span className="mt-[7px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-white" />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </Reveal>
+          </div>
+        </section>
 
-            {/* 3 RÓWNE KARTY DOLNE */}
-            <Reveal className="relative overflow-hidden rounded-[2rem] bg-white p-7 shadow-xl shadow-black/[0.05] md:col-span-4 md:p-8">
-              <div className="flex h-[58px] w-[58px] items-center justify-center rounded-[1.1rem] bg-[#e8f2ff]">
-                <IconHeart />
+        {/* ——— PRODUKTY PÓŁKOWE ——— */}
+        <section id="produkty" className="bg-white px-3 py-[clamp(4.5rem,9vw,_7rem)] md:px-8">
+          <div className="mx-auto max-w-[1320px]">
+            <Reveal className="grid items-end gap-6 md:grid-cols-12">
+              <div className="md:col-span-7">
+                <Pill tone="solid">Produkty</Pill>
+                <h2 className="mt-5 text-[clamp(1.875rem,_3.75vw,_2.75rem)] font-extrabold leading-[1.08] tracking-[-0.01em] text-slate-900">
+                  Trzy gotowe rozwiązania, które możesz wziąć z półki
+                </h2>
               </div>
-              <h3 className="mt-7 text-[1.15rem] font-extrabold tracking-tight text-slate-900">Troska oparta na dowodzie</h3>
-              <p className="mt-2.5 text-[14px] leading-relaxed text-slate-600">
-                Wybieramy narzędzia w oparciu o dane medyczne i realny feedback pracowników, nie efektowny folder.
+              <p className="text-[16px] leading-relaxed text-slate-600 md:col-span-5">
+                Sprawdzone pakiety, z których korzystają nasi klienci. Możesz wybrać sam — albo
+                umówić się z doradcą na bezpłatną analizę i dobrać wariant pod swoje potrzeby.
               </p>
             </Reveal>
 
-            <Reveal className="relative overflow-hidden rounded-[2rem] bg-white p-7 shadow-xl shadow-black/[0.05] md:col-span-4 md:p-8" delay={0.06}>
-              <div className="flex h-[58px] w-[58px] items-center justify-center rounded-[1.1rem] bg-[#e8f2ff]">
-                <IconTarget />
-              </div>
-              <h3 className="mt-7 text-[1.15rem] font-extrabold tracking-tight text-slate-900">Komplementarność</h3>
-              <p className="mt-2.5 text-[14px] leading-relaxed text-slate-600">
-                Plan B uzupełnia Plan A: większy dostęp do medycyny prywatnej w Polsce i za granicą.
-              </p>
-            </Reveal>
+            <Stagger className="mt-14 grid gap-5 md:grid-cols-3">
+              {[
+                {
+                  tag: "Ochrona globalna",
+                  name: "Global",
+                  desc: "Ubezpieczenie zdrowotne z dostępem do leczenia w Polsce i za granicą — także w przypadku poważnych chorób wymagających terapii poza krajem.",
+                  bullets: ["leczenie w renomowanych klinikach na świecie", "drugą opinia medyczna od ekspertów", "pokrycie kosztów leczenia, podróży i pobytu"],
+                  badge: "Międzynarodowe",
+                },
+                {
+                  tag: "Ochrona życia i zdrowia",
+                  name: "Laven",
+                  desc: "Elastyczny pakiet ochrony życia i zdrowia z modułami dla Ciebie i rodziny — od poważnych zachorowań po wsparcie finansowe na co dzień.",
+                  bullets: ["wypłata świadczenia w przypadku poważnej choroby", "ochrona życia i NW", "moduły do dopasowania pod sytuację rodziny"],
+                  badge: "Elastyczne moduły",
+                },
+                {
+                  tag: "Szybka pomoc szpitalna",
+                  name: "Luxmed Szpitalne",
+                  desc: "Szybki dostęp do prywatnego leczenia szpitalnego i operacji w sieci Lux Med — bez kolejek, bez stresu o termin zabiegu.",
+                  bullets: ["operacje i hospitalizacja w sieci Lux Med", "krótkie terminy zabiegów", "kompleksowa opieka okołooperacyjna"],
+                  badge: "Bez kolejek",
+                },
+              ].map((p) => (
+                <StaggerItem key={p.name}>
+                  <HoverLift className="group relative flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-sm transition hover:border-[#0057FF]/30 hover:shadow-2xl hover:shadow-[#0057FF]/15 md:p-9">
+                    <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#0057FF] via-[#ff9933] to-[#ff3399]" />
+                    <div className="flex items-center justify-between">
+                      <span className="inline-flex rounded-full bg-[#e8f2ff] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#0046CC]">
+                        {p.tag}
+                      </span>
+                      <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">{p.badge}</span>
+                    </div>
+                    <h3 className="mt-6 text-[1.55rem] font-extrabold tracking-tight text-slate-900">{p.name}</h3>
+                    <p className="mt-3 text-[14px] leading-relaxed text-slate-600">{p.desc}</p>
+                    <ul className="mt-5 space-y-2">
+                      {p.bullets.map((b) => (
+                        <li key={b} className="flex items-start gap-2.5 text-[13.5px] text-slate-700">
+                          <span className="mt-[7px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#0057FF]" />
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-auto pt-7">
+                      <a
+                        href="#kontakt"
+                        className="inline-flex items-center gap-2 text-[13px] font-bold text-[#0046CC] transition group-hover:translate-x-0.5"
+                      >
+                        Zapytaj o ten produkt
+                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </div>
+                  </HoverLift>
+                </StaggerItem>
+              ))}
+            </Stagger>
 
-            <Reveal className="group relative min-h-[260px] overflow-hidden rounded-[2rem] md:col-span-4" delay={0.12}>
-              <Image src={img.bentoB} alt="" fill className="object-cover transition duration-700 ease-out group-hover:scale-[1.05]" sizes="(max-width:768px) 100vw, 30vw" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
-              <div className="relative flex h-full min-h-[260px] flex-col justify-between p-7 md:p-8">
-                <Pill>Dobrostan</Pill>
-                <div>
-                  <h3 className="text-[1.15rem] font-extrabold leading-tight tracking-tight text-white">
-                    365 dni codziennego skupienia
-                  </h3>
-                  <p className="mt-2 text-[13px] leading-relaxed text-white/85">
-                    Praktyki, które pracują przy biurku i przy łóżku — nie tylko w prezentacji.
-                  </p>
-                </div>
+            <Reveal className="mt-12 rounded-[1.5rem] border border-[#0057FF]/15 bg-[#eef4ff]/70 p-7 md:flex md:items-center md:justify-between md:p-9">
+              <div className="max-w-2xl">
+                <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0046CC]">Nie wiesz, co wybrać?</p>
+                <p className="mt-2 text-[16px] font-semibold leading-snug text-slate-900">
+                  Umów bezpłatną analizę u profesjonalnych doradców — dobiorą wariant pod Twoją sytuację, budżet i rodzinę.
+                </p>
               </div>
+              <a
+                href="#kontakt"
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#0057FF] px-6 py-3.5 text-[13px] font-bold text-white shadow-[0_12px_30px_-10px_rgba(0,87,255,0.5)] transition hover:bg-gradient-to-r hover:from-[#ff9933] hover:to-[#ff3399] md:mt-0"
+              >
+                Umów rozmowę z doradcą →
+              </a>
             </Reveal>
           </div>
         </section>
@@ -657,6 +724,79 @@ export default function Home() {
                 ))}
               </div>
             </Reveal>
+          </div>
+        </section>
+
+        {/* ——— PARTNER — UNILINK ——— */}
+        <section id="partner" className="bg-white px-3 py-[clamp(4.5rem,9vw,_7rem)] md:px-8">
+          <div className="mx-auto max-w-[1320px]">
+            <Reveal className="grid items-end gap-6 md:grid-cols-12">
+              <div className="md:col-span-7">
+                <Pill tone="solid">Partner</Pill>
+                <h2 className="mt-5 text-[clamp(1.875rem,_3.75vw,_2.75rem)] font-extrabold leading-[1.08] tracking-[-0.01em] text-slate-900">
+                  Działamy z Unilinkiem — jedną z największych multiagencji w Polsce
+                </h2>
+              </div>
+              <p className="text-[16px] leading-relaxed text-slate-600 md:col-span-5">
+                Dzięki współpracy z Unilinkiem mamy dostęp do oferty kilkudziesięciu zakładów ubezpieczeń.
+                Zamiast pokazywać Ci jedną propozycję, porównujemy rynek i dobieramy to, co naprawdę pasuje.
+              </p>
+            </Reveal>
+
+            <div className="mt-14 grid gap-5 md:grid-cols-12">
+              <Reveal className="relative overflow-hidden rounded-[2rem] bg-slate-950 text-white md:col-span-5">
+                <div className="absolute inset-0 bg-[radial-gradient(120%_70%_at_15%_20%,rgba(0,87,255,0.55)_0%,transparent_55%),linear-gradient(135deg,rgba(0,0,0,0.85)_0%,rgba(0,87,255,0.45)_100%)]" />
+                <div className="absolute inset-0 bg-grain opacity-[0.18] mix-blend-overlay" />
+                <div className="pointer-events-none absolute -left-16 -bottom-16 h-[260px] w-[260px] rounded-full bg-[#0057FF] opacity-50 blur-[100px] animate-blob" />
+                <div className="relative flex h-full min-h-[360px] flex-col justify-between p-8 md:p-10">
+                  <div className="flex h-14 w-44 items-center">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/brand/partner-unilink.svg" alt="Logo Unilink" className="h-full w-auto brightness-0 invert opacity-95" />
+                  </div>
+                  <div>
+                    <p className="text-[1.35rem] font-extrabold leading-[1.15] tracking-[-0.01em] md:text-[1.6rem]">
+                      Jeden punkt kontaktu, dziesiątki ubezpieczycieli, jedna decyzja — Twoja.
+                    </p>
+                    <p className="mt-4 text-[14px] leading-relaxed text-white/80">
+                      Unilink to ponad 20 lat doświadczenia i tysiące doradców obsługujących klientów w całej Polsce.
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+
+              <Stagger className="grid gap-5 md:col-span-7 md:grid-cols-2">
+                {[
+                  {
+                    i: <IconTarget />,
+                    t: "Porównanie zamiast jednej oferty",
+                    d: "Mamy dostęp do produktów wielu zakładów ubezpieczeń — pokazujemy realne różnice w ochronie i cenie, nie pojedynczą propozycję.",
+                  },
+                  {
+                    i: <IconShield />,
+                    t: "Profesjonalni doradcy",
+                    d: "Indywidualna analiza Twojej sytuacji, znajomość zapisów polis, jasne tłumaczenie wyłączeń. Bez czytania drobnym drukiem na własną rękę.",
+                  },
+                  {
+                    i: <IconHeart />,
+                    t: "Wsparcie po sprzedaży",
+                    d: "Prowadzimy Cię także w trakcie szkody i odnowienia — zamiast call center masz konkretną osobę, która zna Twoją historię.",
+                  },
+                  {
+                    i: <IconSpark />,
+                    t: "Stabilny partner",
+                    d: "Unilink to jeden z liderów rynku pośrednictwa ubezpieczeniowego w Polsce — masz pewność, że to nie efemeryczny pośrednik z internetu.",
+                  },
+                ].map((c) => (
+                  <StaggerItem key={c.t}>
+                    <HoverLift className="group h-full rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:border-[#0057FF]/30 hover:shadow-xl hover:shadow-[#0057FF]/10">
+                      <div className="flex h-[52px] w-[52px] items-center justify-center rounded-[1rem] bg-[#e8f2ff]">{c.i}</div>
+                      <h3 className="mt-5 text-[1.05rem] font-extrabold tracking-tight text-slate-900">{c.t}</h3>
+                      <p className="mt-2.5 text-[13.5px] leading-relaxed text-slate-600">{c.d}</p>
+                    </HoverLift>
+                  </StaggerItem>
+                ))}
+              </Stagger>
+            </div>
           </div>
         </section>
 
