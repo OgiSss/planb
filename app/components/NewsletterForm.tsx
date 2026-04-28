@@ -81,11 +81,11 @@ export function NewsletterForm() {
     >
       <div className="grid gap-3 sm:grid-cols-2">
         <Field label="Imię i nazwisko" name="name" value={data.name} onChange={update("name")} required placeholder="Anna Kowalska" />
-        <Field label="Firma / organizacja" name="company" value={data.company} onChange={update("company")} placeholder="Twoja firma" />
+        <Field label="E-mail" name="email" type="email" value={data.email} onChange={update("email")} required placeholder="anna@example.pl" />
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
-        <Field label="E-mail służbowy" name="email" type="email" value={data.email} onChange={update("email")} required placeholder="anna@firma.pl" />
         <Field label="Telefon (opcjonalnie)" name="phone" type="tel" value={data.phone} onChange={update("phone")} placeholder="+48 600 000 000" />
+        <Field label="Firma / organizacja (opcjonalnie)" name="company" value={data.company} onChange={update("company")} placeholder="jeśli piszesz w imieniu zespołu" />
       </div>
 
       <label className="block">
@@ -97,7 +97,7 @@ export function NewsletterForm() {
           value={data.message}
           onChange={update("message")}
           rows={3}
-          placeholder="Np. szukamy benefitu zdrowotnego dla 80-osobowego zespołu…"
+          placeholder="Np. chciałbym przejrzeć moje obecne polisy / pomyśleć o profilaktyce dla rodziny / poszukać planu dla zespołu…"
           className="w-full resize-none rounded-[1rem] border border-slate-200 bg-white/90 px-4 py-3 text-[15px] text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-[#0057FF]/70 focus:ring-4 focus:ring-[#0057FF]/15"
         />
       </label>

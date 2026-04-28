@@ -9,8 +9,7 @@ const img = {
   hero: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=85&w=2400",
   bentoA: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=85&w=1600",
   bentoB: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=85&w=1200",
-  rowA: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&q=85&w=1400",
-  cta: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&q=85&w=2000",
+  rowA: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=85&w=1400",
   avatar1: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=85&w=200",
   avatar2: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=85&w=200",
   avatar3: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=85&w=200",
@@ -24,24 +23,24 @@ const partners = [
 
 const faqs = [
   {
-    q: "Czy Plan B to ubezpieczenie, czy benefit?",
-    a: "Plan B to ramowy program edukacyjno-profilaktyczny. W praktyce komponuje się z benefitów zdrowotnych, ubezpieczeń życia i konsultacji medycznych — dopasowanych do realnej struktury zespołu, a nie do efektownego folderu.",
+    q: "Dla kogo jest Plan B?",
+    a: "Dla każdego — osób prywatnych, rodzin, firm i organizacji. Pomagamy zarówno komuś, kto pierwszy raz myśli o swojej polisie, jak i firmie, która chce, żeby benefit zdrowotny faktycznie chronił zespół.",
   },
   {
-    q: "Dla kogo jest ten program?",
-    a: "Dla działów HR, zarządów i właścicieli firm 20–500 osób, którzy chcą, żeby benefit zdrowotny faktycznie chronił ludzi. A także dla NGO i partnerów chcących prowadzić rzetelny dialog o profilaktyce.",
+    q: "Czy Plan B to ubezpieczenie?",
+    a: "Plan B to ramowy program edukacyjno-profilaktyczny Fundacji „Zacznij od Siebie”. Pomaga świadomie korzystać z ubezpieczeń, profilaktyki i medycyny — sam w sobie nie jest polisą.",
   },
   {
-    q: "Ile to kosztuje firmę?",
-    a: "Konsultacja wstępna i mapowanie potrzeb są bezpłatne. Wycena programu zależy od liczby pracowników i wybranych komponentów — przedstawiamy ją po krótkiej rozmowie diagnostycznej.",
+    q: "Ile to kosztuje?",
+    a: "Pierwsza rozmowa jest zawsze bezpłatna i bez zobowiązań. Co dalej — zależy od tego, co wybierzesz. Mówimy wprost, jakie są opcje i ile kosztują.",
   },
   {
     q: "Jak wygląda pierwsza rozmowa?",
-    a: "30-minutowe spotkanie online. Pytamy o cele, obecny pakiet benefitów i bolączki zespołu. Po rozmowie dostają Państwo notatkę z 3 rekomendacjami — bez zobowiązań.",
+    a: "30 minut online lub telefonicznie. Pytamy o Twoją sytuację — to, co dla Ciebie ważne, czego się obawiasz, co już masz. Po rozmowie dostajesz krótkie podsumowanie z konkretnymi rekomendacjami.",
   },
   {
-    q: "Czy współpracujecie z Sejmem i instytucjami publicznymi?",
-    a: "Tak — fundacja prowadzi dialog z parlamentem, środowiskiem medycznym i organizacjami pozarządowymi. Materiał z inicjatywy w Sejmie znajdą Państwo na stronie fundacji.",
+    q: "Czy współpracujecie z medycyną i instytucjami publicznymi?",
+    a: "Tak — fundacja prowadzi dialog z parlamentem (m.in. inicjatywa w Sejmie RP), środowiskiem medycznym i organizacjami pozarządowymi. Materiały znajdziesz na stronie fundacji.",
   },
 ];
 
@@ -178,12 +177,12 @@ export default function Home() {
                       <path d="M2 8 Q80 2 150 6 T298 5" stroke="#ff3399" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.85" />
                     </svg>
                   </span>{" "}
-                  Twój zespół.
+                  Ciebie i Twoich bliskich.
                 </h1>
 
                 <p className="mt-7 max-w-xl text-[17px] leading-relaxed text-white/90 md:text-[19px]">
-                  Plan B to program Fundacji „Zacznij od Siebie”: benefity zdrowotne, które żyją,
-                  edukacja ubezpieczeniowa i dialog z medycyną oraz NGO. Bez sloganów dla pokazu — z konkretnym planem dla Twoich ludzi.
+                  Plan B to program Fundacji „Zacznij od Siebie” — dla każdego, kto chce świadomie zadbać o swoje zdrowie i bezpieczeństwo finansowe rodziny.
+                  Edukacja ubezpieczeniowa, profilaktyka i konkretne wskazówki. Bez nachalnej sprzedaży, bez sloganów dla pokazu.
                 </p>
 
                 <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -215,7 +214,7 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="text-[13px] text-white/85">
-                    <span className="font-bold text-white">100+ osób</span> z medycyny, HR i NGO już rozmawia z Plan B.
+                    <span className="font-bold text-white">Setki rozmów</span> — z osobami, rodzinami i ekspertami medycznymi.
                   </div>
                 </div>
               </Reveal>
@@ -226,12 +225,12 @@ export default function Home() {
                   <div className="relative">
                     <div className="flex items-start justify-between gap-3">
                       <div>
-                        <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0057FF]">Bezpłatna konsultacja</p>
+                        <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0057FF]">Bezpłatna rozmowa</p>
                         <h2 className="mt-2 text-[1.45rem] font-extrabold leading-tight tracking-tight text-slate-900">
-                          Sprawdź, jak Plan B zadziała w Twojej firmie
+                          Sprawdź, czego dla siebie potrzebujesz
                         </h2>
                         <p className="mt-2 text-[13px] leading-relaxed text-slate-600">
-                          30 min rozmowy, 3 rekomendacje, 0 sprzedażowej presji.
+                          30 minut rozmowy, konkretne wskazówki, zero sprzedażowej presji.
                         </p>
                       </div>
                       <span className="hidden rounded-full bg-emerald-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-700 sm:inline-flex">
@@ -273,9 +272,9 @@ export default function Home() {
           <Stagger className="mx-auto grid max-w-[1320px] gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { k: "3", v: "Filary programu", d: "Profilaktyka, edukacja, dialog" },
-              { k: "24h", v: "Czas reakcji", d: "Od zgłoszenia do rozmowy" },
-              { k: "100%", v: "Bez nachalnej sprzedaży", d: "Edukacja > polisa pod presją" },
-              { k: "∞", v: "Rozmów o zdrowiu", d: "Bo profilaktyka to długi dystans" },
+              { k: "24h", v: "Czas reakcji", d: "Od zgłoszenia do pierwszej rozmowy" },
+              { k: "0 zł", v: "Pierwsza rozmowa", d: "Bez zobowiązań i ukrytych kosztów" },
+              { k: "Każdy", v: "Dla kogo Plan B", d: "Osoba, rodzina, organizacja" },
             ].map((s) => (
               <StaggerItem key={s.v}>
                 <HoverLift className="group relative h-full overflow-hidden rounded-[1.5rem] border border-slate-200/70 bg-white p-6 shadow-sm transition hover:shadow-xl hover:shadow-[#0057FF]/10">
@@ -385,20 +384,20 @@ export default function Home() {
               <div className="md:col-span-7">
                 <Pill tone="solid">Jak działamy</Pill>
                 <h2 className="mt-5 text-[clamp(1.875rem,_3.75vw,_2.75rem)] font-extrabold leading-[1.08] tracking-[-0.01em] text-slate-900">
-                  Cztery kroki od pierwszej rozmowy do żywego programu
+                  Cztery kroki od pierwszej rozmowy do spokojnej głowy
                 </h2>
               </div>
               <p className="text-[16px] leading-relaxed text-slate-600 md:col-span-5">
-                Bez wielomiesięcznych projektów. Diagnozę robimy w tydzień, pierwszą wartość pracownik czuje w pierwszym miesiącu.
+                Bez nachalnej sprzedaży i wielostronicowych ofert. Mówimy ludzkim językiem — Ty decydujesz, czy i co wybierasz.
               </p>
             </Reveal>
 
             <Stagger className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {[
-                { n: "01", t: "Rozmowa diagnostyczna", d: "30 min online. Pytamy o cele, zespół i obecny pakiet benefitów." },
-                { n: "02", t: "Mapa potrzeb", d: "Skracamy hałas: 3 rekomendacje dopasowane do realnej struktury firmy." },
-                { n: "03", t: "Komponenty Plan B", d: "Dobieramy benefity zdrowotne, edukację ubezpieczeniową, partnerów medycznych." },
-                { n: "04", t: "Życie programu", d: "Mierzymy adopcję, zbieramy feedback pracowników, korygujemy w rytmie kwartałów." },
+                { n: "01", t: "Krótka rozmowa", d: "30 minut online lub telefonicznie. Pytamy o sytuację i to, co dla Ciebie ważne." },
+                { n: "02", t: "Mapa potrzeb", d: "Skracamy hałas: konkretne rekomendacje dopasowane do Twojego życia, nie do oferty." },
+                { n: "03", t: "Świadomy wybór", d: "Tłumaczymy świat ubezpieczeń i profilaktyki tak, żebyś rozumiał, co dostajesz." },
+                { n: "04", t: "Wsparcie na lata", d: "Jesteśmy obok, gdy zmieniają się potrzeby — Ty, rodzina lub organizacja." },
               ].map((s) => (
                 <StaggerItem key={s.n}>
                   <HoverLift className="group relative h-full overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white p-6 transition hover:border-[#0057FF]/30 hover:shadow-2xl hover:shadow-[#0057FF]/15">
@@ -417,28 +416,101 @@ export default function Home() {
               ))}
             </Stagger>
 
-            {/* Cytat / Sejm */}
-            <Reveal className="mt-16 grid items-center gap-8 rounded-[2rem] border border-[#0057FF]/14 bg-[#eef4ff]/70 p-8 md:grid-cols-12 md:p-12">
-              <div className="md:col-span-7">
-                <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#0046CC]">Dialog jak w Sejmie</p>
-                <h3 className="mt-4 text-[1.6rem] font-extrabold leading-tight tracking-tight text-slate-900 md:text-[2rem]">
-                  „Ekspertów słucha się uważnie — z ludźmi pracuje się świadomie.”
-                </h3>
-                <p className="mt-4 text-[16px] leading-relaxed text-slate-600">
-                  Rozmowa przy okrągłym stole z lekarzami i NGO, jak podczas inicjatywy w Sejmie RP, przypomina:
-                  profilaktyka to nakład inwestowany w spokojniejsze jutra.
-                </p>
-                <Link
-                  href="https://www.fundacjazacznijodsiebie.pl/pl/aktualnosci/Sejm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-full border-2 border-[#0057FF]/25 px-6 py-3 text-[13px] font-bold text-[#0046CC] transition hover:border-transparent hover:bg-gradient-to-r hover:from-[#ff9933] hover:to-[#ff3399] hover:text-white"
-                >
-                  Czytaj artykuł o Sejmie →
-                </Link>
+            {/* ——— PRASOWA KARTA WYDARZENIA — Sejm ——— */}
+            <Reveal className="relative mt-20 overflow-hidden rounded-[2.25rem] bg-slate-950 text-white shadow-[0_40px_100px_-30px_rgba(0,0,0,0.55)]">
+              <Image src={img.rowA} alt="" fill className="object-cover opacity-50" sizes="100vw" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#001a55] via-slate-950/80 to-[#0057FF]/35" />
+              <div className="absolute inset-0 bg-grain opacity-15 mix-blend-overlay" />
+              <div className="pointer-events-none absolute -left-24 -bottom-24 h-[320px] w-[320px] rounded-full bg-[#0057FF] opacity-50 blur-[120px] animate-blob" />
+
+              {/* meta-strip */}
+              <div className="relative z-10 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-6 py-4 text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 md:px-12">
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+                  <span className="inline-flex items-center gap-2">
+                    <span className="h-2 w-2 animate-pulse rounded-full bg-[#ff3399]" />
+                    Wydarzenie publiczne
+                  </span>
+                  <span className="text-white/40">·</span>
+                  <span>Sejm RP, Warszawa</span>
+                  <span className="text-white/40">·</span>
+                  <time dateTime="2025-12-18">18 grudnia 2025</time>
+                </div>
+                <span className="hidden text-white/55 sm:inline">Lektura ~3 min</span>
               </div>
-              <div className="relative aspect-[5/4] overflow-hidden rounded-[1.5rem] shadow-2xl md:col-span-5">
-                <Image src={img.rowA} alt="Rozmowa z ekspertem" fill className="object-cover" sizes="(max-width:768px) 100vw, 40vw" />
+
+              <div className="relative z-10 grid gap-10 px-6 py-12 md:grid-cols-12 md:gap-14 md:px-12 md:py-16">
+                {/* lewa kolumna — okładka z ramką */}
+                <div className="md:col-span-5">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] ring-1 ring-white/15 shadow-2xl">
+                    <Image src={img.rowA} alt="Rozmowa przy okrągłym stole — inicjatywa Plan A + Plan B w Sejmie RP" fill className="object-cover" sizes="(max-width:768px) 100vw, 40vw" />
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent p-5">
+                      <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/70">Fot. Fundacja Zacznij od Siebie</p>
+                    </div>
+                  </div>
+                  <div className="mt-5 grid grid-cols-2 gap-3">
+                    <div className="rounded-[1rem] border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/60">Inicjatorka</p>
+                      <p className="mt-1.5 text-[13px] font-bold leading-tight">Aleksandra Friedel</p>
+                      <p className="text-[11px] text-white/65">Prezeska Fundacji</p>
+                    </div>
+                    <div className="rounded-[1rem] border border-white/10 bg-white/5 px-4 py-3 backdrop-blur">
+                      <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/60">Gospodyni</p>
+                      <p className="mt-1.5 text-[13px] font-bold leading-tight">Monika Wielichowska</p>
+                      <p className="text-[11px] text-white/65">Wicemarszałkini Sejmu</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* prawa kolumna — treść */}
+                <div className="md:col-span-7">
+                  <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-white backdrop-blur">
+                    Plan A + Plan B w Sejmie
+                  </span>
+                  <h3 className="mt-5 text-[1.85rem] font-extrabold leading-[1.1] tracking-[-0.01em] md:text-[2.5rem]">
+                    Co ma wspólnego Sejm <br className="hidden md:block" />i Plan A + Plan B?
+                  </h3>
+
+                  {/* pull quote */}
+                  <figure className="relative mt-8 rounded-[1.25rem] border-l-[3px] border-[#ff3399] bg-white/5 p-6 backdrop-blur">
+                    <svg className="absolute -left-1 -top-3 h-8 w-8 text-[#ff3399]" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v2a2 2 0 0 1-2 2H4v2h1a4 4 0 0 0 4-4V7zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v2a2 2 0 0 1-2 2h-1v2h1a4 4 0 0 0 4-4V7z" />
+                    </svg>
+                    <blockquote className="text-[1.15rem] font-semibold leading-snug text-white md:text-[1.3rem]">
+                      Profilaktyka to najlepsza inwestycja w zdrowie, bezpieczeństwo i długofalową jakość życia.
+                    </blockquote>
+                    <figcaption className="mt-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-white/65">
+                      — przekaz spotkania w Sejmie RP, grudzień 2025
+                    </figcaption>
+                  </figure>
+
+                  <p className="mt-7 max-w-xl text-[15px] leading-relaxed text-white/85">
+                    Przy okrągłym stole spotkali się przedstawiciele medycyny, organizacji pozarządowych
+                    i parlamentu, by rozmawiać o konkretnych rozwiązaniach z zakresu profilaktyki zdrowotnej —
+                    a nie deklaracjach dla pokazu.
+                  </p>
+
+                  <div className="mt-8 flex flex-wrap items-center gap-3">
+                    <Link
+                      href="https://www.fundacjazacznijodsiebie.pl/pl/aktualnosci/Sejm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[13px] font-extrabold text-[#0046CC] shadow-lg transition hover:scale-[1.02]"
+                    >
+                      Przeczytaj cały artykuł
+                      <svg className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    <Link
+                      href="https://fundacjazacznijodsiebie.pl/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-6 py-3 text-[13px] font-semibold text-white backdrop-blur-sm transition hover:bg-white/15"
+                    >
+                      Strona fundacji
+                    </Link>
+                  </div>
+                </div>
               </div>
             </Reveal>
           </div>
@@ -450,29 +522,32 @@ export default function Home() {
             <Reveal className="text-center">
               <Pill tone="solid">Dla kogo</Pill>
               <h2 className="mx-auto mt-5 max-w-3xl text-[clamp(1.875rem,_3.75vw,_2.75rem)] font-extrabold leading-[1.08] tracking-[-0.01em] text-slate-900">
-                Plan B działa, gdy spotyka się troska, kompetencja i odwaga decyzji
+                Plan B jest dla każdego — niezależnie od tego, gdzie jesteś w życiu
               </h2>
+              <p className="mx-auto mt-5 max-w-xl text-[16px] leading-relaxed text-slate-600">
+                Pomagamy zarówno osobom prywatnym i całym rodzinom, jak i firmom czy organizacjom — tym samym językiem i z tą samą dbałością.
+              </p>
             </Reveal>
 
             <Stagger className="mt-14 grid gap-5 md:grid-cols-3">
               {[
                 {
-                  i: <IconShield />,
-                  t: "Zarządy i właściciele",
-                  d: "Chcą, by pakiet zdrowotny działał — nie był tylko PDF-em w intranecie.",
-                  bullets: ["mierzalna adopcja", "transparentna wycena", "raporty kwartalne"],
-                },
-                {
                   i: <IconHeart />,
-                  t: "Działy HR & Benefits",
-                  d: "Szukają partnera, który tłumaczy świat ubezpieczeń przystępnym językiem.",
-                  bullets: ["materiały dla pracowników", "webinary tematyczne", "linia wsparcia"],
+                  t: "Dla Ciebie",
+                  d: "Chcesz świadomie zadbać o zdrowie i poczucie bezpieczeństwa — bez kupowania kota w worku.",
+                  bullets: ["audyt obecnych polis", "plan profilaktyki", "konkretne rekomendacje"],
                 },
                 {
                   i: <IconSpark />,
-                  t: "NGO i instytucje",
-                  d: "Wspólnie budujemy publiczny dialog o profilaktyce — z medycyną i parlamentem.",
-                  bullets: ["okrągłe stoły", "publikacje", "współ-projekty"],
+                  t: "Dla Twojej rodziny",
+                  d: "Chcesz, żeby bliscy byli zabezpieczeni — dziecko, partner, rodzice — w jednym spójnym planie.",
+                  bullets: ["ochrona dzieci i partnera", "wsparcie pokolenia rodziców", "dostęp do medycyny"],
+                },
+                {
+                  i: <IconShield />,
+                  t: "Dla firm i NGO",
+                  d: "Szukacie programu zdrowotnego, który faktycznie chroni ludzi — nie tylko wygląda dobrze w folderze.",
+                  bullets: ["benefity, które żyją", "edukacja zespołu", "dialog z medycyną"],
                 },
               ].map((c) => (
                 <StaggerItem key={c.t}>
@@ -527,9 +602,9 @@ export default function Home() {
             </Reveal>
             <Stagger className="grid gap-5 md:grid-cols-3">
               {[
-                { t: "„Wreszcie ktoś tłumaczy ubezpieczenia tak, że pracownik rozumie, co dostaje. To zmienia rozmowę z benefitem.”", a: "Dyrektorka HR, firma 220 osób" },
-                { t: "„Plan B traktujemy jak naturalne uzupełnienie pakietu medycznego. Pracownik czuje, że firma o nim myśli.”", a: "CFO, software house" },
-                { t: "„Doceniam, że fundacja prowadzi realny dialog z medycyną i NGO. To nie jest marketing.”", a: "Ekspert kliniczny, Warszawa" },
+                { t: "„Pierwszy raz ktoś wytłumaczył mi ubezpieczenia po ludzku — bez sprzedażowych sztuczek. Wiem, co mam i dlaczego.”", a: "Anna, 38 lat, mama dwójki dzieci" },
+                { t: "„Po rozmowie z Plan B zrobiliśmy z żoną prosty plan dla całej rodziny. Spokojniej się żyje.”", a: "Marek, 45 lat, Wrocław" },
+                { t: "„Doceniam, że fundacja prowadzi realny dialog z medycyną i NGO. To nie jest marketing — to praca u podstaw.”", a: "Ekspert kliniczny, Warszawa" },
               ].map((q) => (
                 <StaggerItem key={q.a}>
                   <figure className="h-full rounded-[1.5rem] border border-slate-200 bg-[#f7faff]/70 p-7">
@@ -587,11 +662,39 @@ export default function Home() {
 
         {/* ——— FINAL CTA ——— */}
         <section id="kontakt" className="px-3 pb-20 pt-6 md:px-8">
-          <Reveal className="relative mx-auto max-w-[1320px] overflow-hidden rounded-[2.25rem] shadow-[0_40px_100px_-30px_rgba(0,87,255,0.4)]">
-            <Image src={img.cta} alt="Współpraca przy projekcie społecznym" fill className="object-cover md:scale-105 md:object-[center_22%]" sizes="100vw" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-transparent" />
-            <div className="absolute inset-0 bg-grain opacity-15 mix-blend-overlay" />
-            <div className="pointer-events-none absolute -left-20 bottom-0 h-[360px] w-[360px] rounded-full bg-[#0057FF] opacity-40 blur-[120px] animate-blob" />
+          <Reveal className="relative mx-auto max-w-[1320px] overflow-hidden rounded-[2.25rem] bg-[#021040] shadow-[0_40px_100px_-30px_rgba(0,87,255,0.55)]">
+            {/* mesh gradient — 3 blob-y w 3 kolorach marki */}
+            <div className="pointer-events-none absolute -left-32 -top-32 h-[520px] w-[520px] rounded-full bg-[#0057FF] opacity-60 blur-[140px] animate-blob" />
+            <div className="pointer-events-none absolute -right-32 top-1/4 h-[460px] w-[460px] rounded-full bg-[#ff3399] opacity-35 blur-[140px] animate-blob [animation-delay:-7s]" />
+            <div className="pointer-events-none absolute -bottom-40 left-1/3 h-[440px] w-[440px] rounded-full bg-[#ff9933] opacity-30 blur-[140px] animate-blob [animation-delay:-12s]" />
+
+            {/* dekoracyjne fale koncentryczne */}
+            <svg className="pointer-events-none absolute -right-32 -bottom-32 h-[640px] w-[640px] opacity-[0.18]" viewBox="0 0 400 400" fill="none" aria-hidden>
+              <defs>
+                <radialGradient id="ctaRing" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="white" stopOpacity="0.9" />
+                  <stop offset="100%" stopColor="white" stopOpacity="0" />
+                </radialGradient>
+              </defs>
+              {[60, 100, 140, 180, 220, 260].map((r) => (
+                <circle key={r} cx="200" cy="200" r={r} stroke="url(#ctaRing)" strokeWidth="0.8" />
+              ))}
+            </svg>
+
+            {/* siatka kropek u góry */}
+            <svg className="pointer-events-none absolute -left-10 top-10 h-[260px] w-[260px] opacity-30" viewBox="0 0 200 200" aria-hidden>
+              <defs>
+                <pattern id="ctaDots" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1" fill="white" />
+                </pattern>
+              </defs>
+              <rect width="200" height="200" fill="url(#ctaDots)" />
+            </svg>
+
+            {/* grain */}
+            <div className="absolute inset-0 bg-grain opacity-[0.18] mix-blend-overlay" />
+            {/* delikatny vignette */}
+            <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_30%_30%,transparent_0%,rgba(0,0,0,0.35)_100%)]" />
 
             <div className="relative z-10 grid gap-10 px-6 py-16 md:grid-cols-12 md:gap-12 md:px-14 md:py-20">
               <div className="text-white md:col-span-6">
@@ -600,14 +703,14 @@ export default function Home() {
                   Zacznijmy<br />od krótkiej rozmowy.
                 </h2>
                 <p className="mt-5 max-w-md text-[16px] leading-relaxed text-white/85">
-                  30 minut, agenda po Państwa stronie. Pokażemy, jak Plan B układa się z Państwa obecnym pakietem
-                  benefitów i co zmienia w doświadczeniu pracownika.
+                  30 minut. Ty mówisz, czego potrzebujesz — my słuchamy i podpowiadamy. Bez sprzedażowej presji,
+                  bez zbędnych formalności. Dla osoby, rodziny lub organizacji.
                 </p>
 
                 <ul className="mt-8 space-y-3 text-[14px]">
                   {[
-                    "Bezpłatna konsultacja, bez zobowiązań",
-                    "Notatka z 3 rekomendacjami po spotkaniu",
+                    "Bezpłatna rozmowa, bez zobowiązań",
+                    "Konkretne rekomendacje po spotkaniu",
                     "Jeden punkt kontaktu — żadnego call center",
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-3 text-white/90">
@@ -636,7 +739,7 @@ export default function Home() {
                 <article className="rounded-[1.75rem] bg-white p-7 shadow-[0_24px_60px_-20px_rgba(0,0,0,.45)] md:p-9">
                   <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0057FF]">Formularz kontaktowy</span>
                   <h3 className="mt-3 text-[1.55rem] font-extrabold leading-tight tracking-tight text-slate-900">
-                    Powiedzcie nam, czego potrzebujecie
+                    Napisz, czego potrzebujesz
                   </h3>
                   <NewsletterForm />
                 </article>
